@@ -1,0 +1,300 @@
+:root{
+    font-family: Verdana, serif;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.5;
+
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after{
+    box-sizing: inherit;
+}
+
+body{
+    background: #C9A5AA;
+    margin: 12px;
+    margin-bottom: 20px;
+}
+
+nav{
+    background: #F4D3D3;
+    border-radius: 8px;
+    margin-bottom: 16px;
+    padding-bottom: 6px;
+}
+
+.nav-caption{
+    padding: 10px;
+    text-align: center;
+    display: block;
+    font-family: "Arial Black", sans-serif;
+    font-size: 14px;
+    font-weight: 900;
+    line-height: 1.5;
+}
+
+.nav{
+    margin-top: 3px;
+    margin-bottom: 0;
+    padding-left: 0;
+    list-style: none;
+}
+
+.nav > li{
+    text-align: center;
+    padding: 0;
+}
+
+.nav > li > a:hover{
+    background: #fff;
+    color: #5EAAE0;
+}
+
+.nav > li > a{
+    display: block;
+    padding: 6px 10px;
+}
+
+:link{
+    text-decoration: none;
+}
+
+a{
+    color: #006EBE;
+}
+
+:visited{
+    color: #0B257D;
+}
+
+article{
+    background: #FFFFFF;
+    padding: 16px;
+    border-radius: 8px 8px 0px 0px;
+}
+
+article header{
+    background: #E9E9E9;
+    padding: 8px;
+    line-height: 1.166666;
+    border-radius: 8px;
+}
+
+ol{
+    padding-left: 0;
+    list-style: none;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+ol > li:nth-child(even){
+    background: #FCE9E9;
+}
+
+ol > li:nth-child(1){
+    background: #FCF5E9;
+}
+
+ol > li{
+    padding: 10px;
+    border-bottom: 1px solid #C9A5AA;
+}
+
+ol > li:last-child{
+    border-bottom: 0;
+}
+
+ol > li::before{
+    content: counter(list-item) ".";
+}
+
+figure{
+    background: #F4D3D3;
+    margin-right: 0;
+    margin-left: 0;
+    border-radius: 10px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+footer{
+    background: #F4D3D3;
+    line-height: 1.166666;
+    padding: 20px;
+    border-radius: 0px 0px 8px 8px;
+}
+
+.copyright,
+.imprint{
+    display: block;
+}
+
+.bullet{
+    display: none;
+}
+
+.copyright{
+    margin-bottom: 6px;
+}
+
+h1{
+    font-family: Verdana, serif;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1.2083333;
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+h2{
+    font-family: Verdana, serif;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.222;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+p{
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+p + h2{
+    margin-top: 16px;
+}
+
+figure >img{
+    display: block;
+    border-radius: 10px 10px 0px 0px;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+figcaption{
+    font-family: Verdana, serif;
+    font-size: 12px;
+    font-weight: 400;
+    font-style: italic;
+    line-height: 1.75;
+    text-align: center;
+    padding: 10px;
+}
+
+@media screen and (min-width: 620px){
+    :root{
+        font-size: 14px;
+        line-height: 1.5;
+    }
+
+    body{
+        margin: 24px 40px 40px;
+    }
+
+    .nav{
+        margin-top: 0;
+    }
+
+    .nav-caption{
+        display: none;
+    }
+
+    .nav > li{
+        display: inline-block;
+    }
+
+    .nav > li >a{
+        border-radius: 4px;
+    }
+
+    nav{
+        padding-bottom: 0;
+        display: inline-block;
+    }
+
+    .nav-wrapper,
+    article,
+    footer{
+        max-width: 680px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    article{
+        padding: 16px 70px;
+    }
+
+    h1{
+        font-size: 32px;
+        line-height: 1.238095;
+    }
+
+    figure{
+        padding: 20px;
+        margin-top: 8px;
+        border-radius: 4px 2px 4px 6px;
+    }
+
+    figure > img{
+        border-radius: 2px;
+    }
+
+    figcaption{
+        padding: 10px 0 0;
+        font-size: 16px;
+        line-height: 1.3125;
+        text-align: center;
+    }
+
+    footer,
+    article header{
+        font-size: 12px;
+        line-height: 1.16666;
+    }
+
+    footer{
+        text-align: center;
+    }
+
+    .copyright,
+    .imprint,
+    .bullet{
+        display: inline;
+    }
+}
+
+@media screen and (min-width: 820px) {
+    body{
+        margin: 64px 64px 29px;
+    }
+
+    h1{
+        font-size: 42px;
+        line-height: 1.238095;
+    }
+
+    figure{
+        margin-top: 16px;
+        border-radius: 12px;
+    }
+   
+    figure >img{
+        border-radius: 6px 8px 8px 6px;
+    }
+
+    nav{
+        display: block;
+        text-align: center;
+    }
+
+    article{
+        padding: 30px 50px;
+    }
+
+}
